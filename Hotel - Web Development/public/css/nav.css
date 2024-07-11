@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', sans-serif;
+}
+
+/* top bar style start */
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.top-bar .left-topbar-part,
+.right-topbar-part {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.payment-option-div {
+    width: 400px;
+}
+
+.language-option-div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.right-topbar-part {
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.booking-option-div {
+    width: 400px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.review-option-div {
+    width: 150px;
+}
+
+.account-option-div {
+    width: 150px;
+}
+
+/* top bar style end */
+
+/* middle bar style start */
+.middle-bar {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    background-color: black;
+}
+
+.middle-bar img {
+    width: 300px;
+}
+
+/* middle bar end  */
+
+/* bottom bar start  */
+.bottom-bar{
+    width: 100%;
+    z-index: 999;
+}
+.bottom-bar div{
+    border-top: 1px solid rgb(27, 27, 27) ;
+    background-color: black;
+    padding: 20px;
+
+}
+
+.bottom-bar ul {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.bottom-bar ul li {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+.bottom-bar ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(177, 177, 177);    
+}
+
+/* bottom bar end  */

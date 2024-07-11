@@ -1,0 +1,85 @@
+html{
+    color-scheme: dark;
+}
+*{
+    color: white;
+}
+.title{
+    background-image: url('../img/page-title-dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px;
+}
+.title h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.reservation-section{
+    display: flex;
+    background-color: black;
+    padding: 100px 100px 200px;
+}
+.reservation-details {
+    background-color: #3e372f;
+    width: 31%;
+    padding-bottom: 50px;
+}
+h3{
+    color: white;
+    text-align: center;    
+    padding: 30px 50px;
+}
+
+.person-summary{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 20px 30px;
+    background-color: #2b2620;
+}
+.person-summary div:nth-child(1){
+    padding-right: 20px;
+}
+.input-field{
+    padding: 10px 30px;   
+}
+.input-field div{
+    width: 180px;
+    display: inline-block;
+    text-align: right;
+}
+label{
+    margin-right: 10px;
+    width: 100px;
+    display: inline-block;
+}
+input, select{
+    background-color: black;
+    padding: 10px 20px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+    filter: brightness(1.1);
+  }
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /* color: red; */
+    /* filter: invert(1); */
+  }
+
+
+/* right side  */
+.reservation-room-details {
+    padding: 0 0 20px 60px;
+    box-sizing: border-box;
+    width: 69%;
+}
+.reservation-room-details div {
+    display: flex;
+    background: #3e372f;
+    padding: 10px 4px;
+}
+.reservation-room-details div p {
+    padding-left: 33px;
+}
