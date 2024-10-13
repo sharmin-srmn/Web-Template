@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/reservation.css" />
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400;1,500&family=Raleway:wght@200;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hotel</title>
+  </head>
+  <body>
+    <!-- navmenu section  -->
+    <nav id="navbar"></nav>
+
+    <!-- headline  -->
+    <section class="heading-title-section">
+      <div class="title">
+        <h3>booking</h3>
+      </div>
+    </section>
+
+    <!-- reservation  -->
+    <section class="reservation-section">
+      <div class="reservation-details">
+        <div>
+          <h3>your reservation</h3>
+        </div>
+        <div class="person-summary">
+          <div>>></div>
+          <div>
+            <p>room : 1</p>
+            <p>adult : 1</p>
+            <p>children : 1</p>
+          </div>
+        </div>
+        <div class="check-in-date input-field">
+          <label for="">check in</label>
+          <div>
+            <input type="date" name="" id="" />
+          </div>
+        </div>
+        <div class="number-of-nights input-field">
+          <label for="">nights</label>
+          <div>
+            <input type="number" value="1" name="" id="" min="1" max="30" />
+          </div>
+        </div>
+        <div class="check-out-date input-field">
+          <label for="">check out</label>
+          <div>
+            <input type="date" name="" id="" />
+          </div>
+        </div>
+        <div class="number-of-rooms input-field">
+          <label for="">rooms</label>
+          <div>
+            <select id="rooms" name="rooms">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+        <div class="adult-number input-field">
+          <label for="">adult</label>
+          <div>
+            <input type="number" value="1" name="" id="" min="1" max="30" />
+          </div>
+        </div>
+        <div class="children-number input-field">
+          <label for="">children</label>
+          <div>
+            <input type="number" value="1" name="" id="" min="1" max="30" />
+          </div>
+        </div>
+      </div>
+
+      <!-- right part tab  -->
+
+      <div class="reservation-room-details">
+        <div>
+          <div><p>1. choose date</p></div>
+          <div><p>2. choose room</p></div>
+          <div><p>3. make a reservation</p></div>
+          <div><p>4. confirm</p></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/home.js"></script>
+  </body>
+</html>
