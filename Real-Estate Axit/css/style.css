@@ -1,0 +1,529 @@
+.heroSection{
+    background: url('../img/banner.png');
+    background-size: cover;
+    height: 800px;
+    padding: 150px 150px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.textContainer{
+    width: 60%;
+} 
+.headingText{
+    font-size: 75px;
+    color: white;
+}
+.headingText span{
+    color: red;
+}
+.subHeadingText{
+    font-size: 35px;
+    color: #f3f3f3;
+    line-height: 1.2;
+}
+.dash{
+    width: 80px;
+    height: 2px;
+    background-color: #f3f3f3;
+    margin: 25px 0;
+}
+.shotDescription {
+    color: #817d7d;
+    line-height: 1.4;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 16px;
+}
+.downloadBtn{
+    text-transform: capitalize;
+    color: #f3f3f3;
+    background: none;
+    font-size: 16px;
+    border: 1px solid #f3f3f3;
+    padding: 10px 30px;
+    margin: 25px 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.downloadBtn:hover{
+    background: red;
+    border: red;
+    transform: scale(1.2);
+    padding: 10px 30px;
+    margin: 25px 0;
+}
+.formContainer {
+    width: 32%;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.formContainer::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%; 
+    background: linear-gradient(0deg, transparent, red, red);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.formContainer::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%; 
+    background: linear-gradient(0deg, transparent, red, red);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.formContainer > div{
+    position: absolute;
+    background: black;
+    z-index: 2;
+    inset: 2px;
+    padding: 30px 50px;
+}
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+
+    }
+    100%
+    {
+        transform: rotate(360deg);
+
+    }
+}
+.formContainer p {
+        font-size: 19px;
+        text-transform: capitalize;
+        padding: 20px 0px; 
+        margin-bottom: 20px;  
+}
+.formContainer span{
+    color: red;
+    font-weight: bold;
+}
+.upperForm form div{
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+}
+.upperForm form input{
+    width: 100%;
+    margin: 0;
+    padding: 15px 20px ;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid #817d7d;
+    transition: 0.3s
+}
+.upperForm span{
+    position: absolute;
+    left: 0;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: capitalize;
+    pointer-events: none;
+    color: #817d7d;
+    transition: 0.3s;
+}
+.upperForm input:valid ~ span,
+.upperForm input:focus ~ span {
+    color: red;
+    transform: translateX(10px) translateY(-9px);
+    font-size: 0.7em;
+    padding: 3px 10px;
+    background: black;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    letter-spacing: 0.2em;
+}
+.upperForm input:valid {
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.upperForm div:last-child{
+    width: 100%;
+    background-color:red;
+    margin-top: 20px;
+}
+.upperForm div:last-child input{
+    border: none;
+}
+.socialMediaContainer{
+    padding: 40px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.socialMediaText{
+    width: 40%;
+}
+.socialMediaText p:nth-child(1){
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: red;
+}
+.socialMediaText p:nth-child(2){
+    font-size: 16x;
+    line-height: 1.4;
+    color: #dfdfdf;
+    margin-top: 10px;
+}
+.socialMediaIcons ul{
+    display: flex;
+    justify-content: space-between;
+}
+.socialMediaIcons ul li{
+    list-style-type: none;
+    width: 80px;
+    font-size: 35px;
+    color: #817d7d;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.socialMediaIcons ul li:hover{
+    transform: scale(1.2);
+    color: red;
+}
+.tabSection{
+    background-color: #f3f3f3;
+    padding: 150px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.tabBox{
+    height: 100px;
+    width: 100px;
+    background-color: #333333;
+    text-align: center;
+    padding: 40% 0;
+    text-transform: capitalize;
+    color: #f3f3f3;
+    cursor: pointer;
+}
+.tabBox:nth-child(1){
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 3px;
+    /* background-color: rgb(0,255,255); */
+}
+.tabBox:nth-child(3){
+    border-radius: 0 0 5px 5px;
+    margin-top: 3px;
+}
+.activeBox{
+    background-color:red;
+}
+.tabContent{
+    padding: 10px 60px;
+}
+.tabContent h2{
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #333333;
+}
+.tabContent p{
+    color: #817d7d;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 50px 0;
+}
+.tabContent button{
+    /* background: rgb(0,255,255); */
+    background: red;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #f3f3f3;
+}
+
+.subListSection{
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.subListText{
+    padding: 0 40px 0 60px;
+}
+.subListText .dash{
+    background-color: red;
+    width: 60px;
+}
+.subListText h2{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.subListText p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #817d7d;
+    line-height: 1.7;
+    text-align: justify;
+}
+.innerSublist{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.innerSublist i {
+    border: 1px solid red;
+    padding: 4px;
+    border-radius: 24px;
+    color: red;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+}
+.standardSection{
+    background-color: #f3f3f3;
+}
+.standardText{
+    padding-top: 30px;
+}
+.section{
+    padding: 100px;
+}
+.section .headerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.orangeDash{
+    background-color: red;
+}
+.section h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.section p{
+    color: #817d7d;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.iconSection{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.iconSection div{
+    text-align: center;
+    width: 30%;
+}
+.iconSection i {
+    height: 60px;
+    width: 60px;
+    border: 1px solid red;
+    line-height: 60px;
+    font-size: 35px;
+    border-radius: 50px;
+    color: red;
+    text-align: center;
+}
+.iconSection h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.pricingSection{
+    background-color: #f3f3f3;
+}
+.priceBoxes{
+    padding: 80px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.priceBox{
+    text-align: center;
+    background-color: #ffffff;
+    width: 33%;
+    margin-right: 20px;
+}
+.priceBox div:nth-child(1),.priceBox div:nth-child(2){
+    background: #333333;
+    color: #ffffff;
+    margin-bottom: 2px;
+    padding: 30px;
+}
+.priceBox div:nth-child(2){
+    padding-bottom: 40px;
+    margin-bottom: 0;
+}
+.priceBox .orangedDiv{
+    height: 8px;
+    background-color: red;
+}
+.priceBox:nth-child(2) .orangedDiv{
+    padding: 10px 0;
+    height: 40px;
+}
+.priceBox h2 ,.priceBox p{
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.priceBox p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    font-style: italic;
+}
+.priceBox span{
+    font-size: 100px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: -10px;
+}
+.priceBox ul{
+    list-style-type: none;
+}
+.priceBox ul li{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    padding: 15px 0;
+    border-bottom: 1px solid #dfdfdf;
+}
+.testimonialSection{
+    padding: 100px 100px 60px;
+}
+.testimonies{
+    padding: 50px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.testimony{
+    width: 32%;
+}
+.messageBox{
+    background-color: #efefef;
+    padding: 30px;
+    position: relative;
+}
+.messageBox::after{
+    content: ' ';
+    position: absolute;
+    background-color: #efefef;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    z-index: -1;
+    left: 20px;
+}
+.messageBox p {
+    font-size: 14px;
+    font-style: italic;
+}
+.person{
+    padding: 30px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.person .personInfo{
+    padding: 0 25px;    
+}
+.personInfo h3{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.personInfo p {
+    font-size: 14px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.stylishSection{
+    background: url('../img/custom.png');
+    background-size: cover;
+    height: 400px;
+}
+.stylishSection h2, .stylishSection p{
+    color: #f3f3f3;
+}
+.formSection{
+    padding: 80px 40px 40px;
+}
+.formSection form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+.formSection .lowerForm{
+    display: flex;
+    justify-content: space-around;
+}
+.formSection .leftColumn,.formSection .rightColumn{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+input, textarea {
+    margin: 15px;
+    padding: 20px 10px;
+    border: none;
+    color: #3e3e3e;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    text-transform: capitalize;
+}
+textarea{
+    width: 100%;
+}
+.formSection .downloadBtn{
+    width: 20%;
+    margin-left: 20px;
+    background-color: red;
+    margin: 50px auto 0;
+}
+input:focus, textarea:focus{
+    border: none;
+    color: white;
+    background-color: #212121;
+    outline-color: red;
+    box-shadow: -3px -3px 15px red;
+    transition: 0.1s;
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    color: #817d7d;
+    padding-top: 10px;
+    margin-top: 32px;
+    font-size: 12px;
+    border-top: 1px solid #3e3e3e;
+    width: 100%;
+    text-align: center;
+}
