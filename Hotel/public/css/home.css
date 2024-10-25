@@ -1,0 +1,335 @@
+@import "nav.css";
+body {
+  font-family: "Cinzel", sans-serif;
+}
+.hero-image-section {
+  width: 100%;
+  height: 590px;
+}
+.hero-image-section img {
+  width: 100%;
+}
+
+/* checking availability section  */
+.checking-availability-section {
+  background-color: black;
+  /* background-color: #322b23; */
+  padding: 60px 120px;
+}
+.checking-availability-section .container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+}
+.check-in,
+.check-out {
+  width: 200px;
+}
+.nights,
+.adults,
+.children {
+  width: 80px;
+}
+.checking-availability-section span {
+  color: white;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+}
+.checking-availability-section input,
+select {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 100%;
+}
+/* mid image section  */
+.image-mid-section {
+  width: 100%;
+  height: 600px;
+  /* padding: 50px 5vw; */
+}
+.image-collage {
+  max-width: 100%;
+  height: 100%;
+  background: url(../img/room-bg.jpg);
+  background-size: cover;
+  padding: 80px;
+}
+.image-collection {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 100%;
+  /* background-color: #fff; */
+  margin: auto;
+}
+.collage-img {
+  transition: 0.5s;
+  position: absolute;
+  object-fit: cover;
+}
+.collage-img:nth-child(1) {
+  width: 350px;
+  height: 350px;
+  top: 20px;
+  left: 40px;
+}
+.collage-img:nth-child(2) {
+  width: 250px;
+  height: 250px;
+  top: 200px;
+  left: 200px;
+}
+.collage-img:nth-child(3) {
+  width: 280px;
+  height: 280px;
+  top: 100px;
+  left: 350px;
+}
+.collage-img:hover {
+  transform: translateY(-10px);
+}
+
+/* best hotel section  */
+.best-hotel-section {
+  background-color: white;
+  padding: 120px;
+}
+.best-hotel-section .container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.image-section {
+  width: 50%;
+}
+.image-section img {
+  width: 100%;
+}
+.text-section {
+  width: 50%;
+  text-align: center;
+}
+.text-section p {
+  color: #6b6978;
+  text-transform: capitalize;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  padding: 20px;
+}
+.text-section h3 {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+/* room service section  */
+.room-service-section {
+  background-image: url("../img/parallax-19.jpg");
+  padding: 150px 80px;
+  background-size: cover;
+  color: white;
+  position: relative;
+  text-align: left;
+}
+.room-service-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+.room-service-section .container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+.room-service-section .text-section {
+  text-align: left;
+  color: white;
+}
+.room-service-section .text-section p {
+  color: white;
+  position: relative;
+  z-index: 99;
+  padding: 20px 0;
+}
+.room-service-section .text-section h3 {
+  color: white;
+  z-index: 3;
+  position: relative;
+  margin: 20px 0;
+}
+.room-service-section .image-section {
+  padding: 40px;
+}
+.room-service-section .image-section > div {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  position: relative;
+  z-index: 3;
+  top: -100px;
+}
+.room-service-section .image-section > div p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.room-service-section .image-section > div p span {
+  font-size: 45px;
+}
+.room-service-section .image-section > div::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  width: 150%;
+  height: 150%;
+  z-index: 34;
+  background-image: url("../img/towels-.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* master-room-section  */
+.master-room-section {
+  background-image: url("../img/room-bg.jpg");
+}
+.master-room-section.features-section .container div {
+  width: 350px;
+  text-align: left;
+  color: #ad977b;
+}
+
+/* features-section  */
+.features-section {
+  padding: 160px 100px;
+  background-color: black;
+}
+
+.features-section .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.features-section .container div {
+  width: 350px;
+  text-align: center;
+  color: white;
+}
+.features-section img {
+  width: 100%;
+}
+hr {
+  width: 28px;
+  margin: auto;
+}
+.feature-title {
+  margin: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.features-section .container div p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px 0;
+  /* font-weight: 300; */
+  /* letter-spacing: px; */
+}
+
+/* weekly-promotion / */
+.weekly-promotion {
+  padding: 160px 100px;
+}
+.weekly-promotion p,
+h3 {
+  text-transform: capitalize;
+  color: #444444;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.weekly-promotion h3 {
+  font-size: 36px;
+}
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.image-container .left-part {
+  background-image: url("../img/square-10.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+  width: 50%;
+  height: 400px;
+  vertical-align: bottom;
+}
+.left-part h3 {
+}
+.image-container .right-part {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  width: 50%;
+}
+.image-container .right-part > div {
+  display: flex;
+  justify-content: space-around;
+}
+.right-part div:nth-child(1) > div:nth-child(1) {
+  background-image: url("../img/square-6.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+}
+.right-part div:nth-child(1) > div:nth-child(2) {
+  background-image: url("../img/square-8.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+}
+.right-part div:nth-child(2) > div:nth-child(1) {
+  background-image: url("../img/square-6.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+}
+.right-part div:nth-child(2) > div:nth-child(2) {
+  background-image: url("../img/square-8.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+}
+
+footer div {
+  background-color: black;
+  padding: 10px;
+  color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
